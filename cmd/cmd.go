@@ -11,9 +11,9 @@ import (
 	"github.com/docopt/docopt-go"
 
 	"github.com/fatih/color"
-	"github.com/xalanq/cf-tool/client"
-	"github.com/xalanq/cf-tool/config"
-	"github.com/xalanq/cf-tool/util"
+	"github.com/woshiluo/cf-tool/client"
+	"github.com/woshiluo/cf-tool/config"
+	"github.com/woshiluo/cf-tool/util"
 )
 
 // Eval opts

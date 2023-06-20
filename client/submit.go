@@ -7,21 +7,21 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/xalanq/cf-tool/util"
+	"github.com/woshiluo/cf-tool/util"
 
 	"github.com/fatih/color"
 )
 
 func findErrorMessage(body []byte) (string, error) {
-	reg := regexp.MustCompile(`error[a-zA-Z_\-\ ]*">(.*?)</span>`)
+	reg := regexp.MustCompile(`error[a-zA-Z_\- ]*">(.*?)</span>`)
 	tmp := reg.FindSubmatch(body)
 	if tmp == nil {
-		return "", errors.New("Cannot find error")
+		return "", errors.New("cannot find error")
 	}
 	return string(tmp[1]), nil
 }
 
-// Submit submit (block while pending)
+// Submit (block while pending)
 func (c *Client) Submit(info Info, langID, source string) (err error) {
 	color.Cyan("Submit " + info.Hint())
 
@@ -71,7 +71,7 @@ func (c *Client) Submit(info Info, langID, source string) (err error) {
 
 	msg, err := findMessage(body)
 	if err != nil {
-		return errors.New("Submit failed")
+		return errors.New("submit failed")
 	}
 	if !strings.Contains(msg, "submitted successfully") {
 		return errors.New(msg)

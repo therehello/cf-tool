@@ -16,3 +16,5 @@ cf
 *.out
 
 .vscode
+
+.idea

@@ -53,7 +53,7 @@ func (info *Info) errorContest() (string, error) {
 	return "", errors.New(ErrorNeedContestID)
 }
 
-// Hint hint text
+// Hint text
 func (info *Info) Hint() string {
 	text := strings.ToUpper(info.ProblemType)
 	if info.GroupID != "" {
