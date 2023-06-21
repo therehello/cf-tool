@@ -38,7 +38,7 @@ You can download the pre-compiled binary file in [here](https://github.com/there
 
 Then enjoy the cf-tool~
 
-Or you can compile it from the source **(go >= 1.12)**:
+Or you can compile it from the source **(go >= 1.20)**:
 
 ```plain
 $ go get github.com/therehello/cf-tool
