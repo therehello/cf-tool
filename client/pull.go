@@ -78,7 +78,7 @@ func (c *Client) PullCode(URL, path, ext string, rename bool) (filename string, 
 }
 
 // Pull pull all latest codes or ac codes
-func (c *Client) Pull(info Info, rootPath string, ac bool) (err error) {
+func (c *Client) Pull(info Info, contestPath string, ac bool) (err error) {
 	color.Cyan("Pull " + info.Hint())
 
 	URL, err := info.MySubmissionURL(c.host)
@@ -91,7 +91,8 @@ func (c *Client) Pull(info Info, rootPath string, ac bool) (err error) {
 		return
 	}
 
-	used := []Submission{}
+	var used []Submission
+	set := make(map[string]bool)
 
 	for _, submission := range submissions {
 		problemID := strings.ToLower(strings.Split(submission.name, " ")[0])
@@ -105,11 +106,16 @@ func (c *Client) Pull(info Info, rootPath string, ac bool) (err error) {
 		if !ok {
 			continue
 		}
+		if set[problemID] {
+			continue
+		} else {
+			set[problemID] = true
+		}
 		path := ""
 		if info.ProblemID == "" {
-			path = filepath.Join(rootPath, problemID, problemID)
+			path = filepath.Join(contestPath, problemID, problemID)
 		} else {
-			path = filepath.Join(rootPath, problemID)
+			path = filepath.Join(contestPath, problemID)
 		}
 		newInfo := info
 		newInfo.SubmissionID = fmt.Sprintf("%v", submission.id)

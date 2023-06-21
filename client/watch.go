@@ -206,12 +206,8 @@ func parseSubmission(body []byte, cfOffset string) (ret Submission, err error) {
 	}
 	status, _ := sub.Html()
 	numReg := regexp.MustCompile(`\d+`)
-	fmtReg := regexp.MustCompile(`<span\sclass=["']?verdict-format-([\S^>]+?)["']?>`)
-	colReg := regexp.MustCompile(`<span\sclass=["']?verdict-([\S^>]+?)["']?>`)
-	tagReg := regexp.MustCompile(`<[\s\S]*?>`)
+	fmtReg := regexp.MustCompile(`<[^>]*>`)
 	status = fmtReg.ReplaceAllString(status, "")
-	status = colReg.ReplaceAllString(status, `${c-$1}`)
-	status = tagReg.ReplaceAllString(status, "")
 	status = strings.TrimSpace(status)
 	when := get(".format-time")
 	if when != "" {
