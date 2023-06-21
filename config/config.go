@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 
 	"github.com/fatih/color"
-	"github.com/woshiluo/cf-tool/client"
+	"github.com/therehello/cf-tool/client"
 )
 
 // CodeTemplate config parse code template

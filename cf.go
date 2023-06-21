@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/woshiluo/cf-tool/client"
-	"github.com/woshiluo/cf-tool/cmd"
-	"github.com/woshiluo/cf-tool/config"
+	"github.com/therehello/cf-tool/client"
+	"github.com/therehello/cf-tool/cmd"
+	"github.com/therehello/cf-tool/config"
 	"os"
 	"strings"
 
@@ -15,12 +15,12 @@ import (
 	docopt "github.com/docopt/docopt-go"
 )
 
-const version = "v1.0.1"
+const version = "v1.0.2"
 const configPath = "~/.cf/config"
 const sessionPath = "~/.cf/session"
 
 func main() {
-	usage := `Codeforces Tool $%version%$ (cf). https://github.com/woshiluo/cf-tool
+	usage := `Codeforces Tool $%version%$ (cf). https://github.com/therehello/cf-tool
 
 You should run "cf config" to configure your handle, password and code
 templates at first.
@@ -106,7 +106,7 @@ Examples:
                        "a" of contest 100.
   cf pull              Pull the latest codes of current problem into current
                        path.
-  cf clone woshiluo      Clone all codes of woshiluo.
+  cf clone therehello      Clone all codes of therehello.
   cf upgrade           Upgrade the "cf" to the latest version from GitHub.
 
 File:
@@ -121,7 +121,7 @@ Template:
   You can insert some placeholders into your template code. When generate a code
   from the template, cf will replace all placeholders by following rules:
 
-  $%U%$   Handle (e.g. woshiluo)
+  $%U%$   Handle (e.g. therehello)
   $%Y%$   Year   (e.g. 2019)
   $%M%$   Month  (e.g. 04)
   $%D%$   Day    (e.g. 09)
@@ -142,7 +142,7 @@ Script in template:
   You can insert some placeholders in your scripts. When execute a script,
   cf will replace all placeholders by following rules:
 
-  $%path%$   Path to source file (Excluding $%full%$, e.g. "/home/woshiluo/")
+  $%path%$   Path to source file (Excluding $%full%$, e.g. "/home/therehello/")
   $%full%$   Full name of source file (e.g. "a.cpp")
   $%file%$   Name of source file (Excluding suffix, e.g. "a")
   $%rand%$   Random string with 8 character (including "a-z" "0-9")`

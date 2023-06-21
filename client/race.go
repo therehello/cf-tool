@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/woshiluo/cf-tool/util"
+	"github.com/therehello/cf-tool/util"
 
 	"github.com/fatih/color"
 	ansi "github.com/k0kubun/go-ansi"

@@ -4,8 +4,8 @@ import (
 	"errors"
 	"path/filepath"
 
-	"github.com/woshiluo/cf-tool/client"
-	"github.com/woshiluo/cf-tool/config"
+	"github.com/therehello/cf-tool/client"
+	"github.com/therehello/cf-tool/config"
 )
 
 // Parse command

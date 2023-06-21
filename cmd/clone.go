@@ -3,7 +3,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/woshiluo/cf-tool/client"
+	"github.com/therehello/cf-tool/client"
 )
 
 // Clone command

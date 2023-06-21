@@ -1,4 +1,4 @@
-module github.com/woshiluo/cf-tool
+module github.com/therehello/cf-tool
 
 go 1.20
 

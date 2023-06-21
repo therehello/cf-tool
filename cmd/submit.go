@@ -3,8 +3,8 @@ package cmd
 import (
 	"io/ioutil"
 
-	"github.com/woshiluo/cf-tool/client"
-	"github.com/woshiluo/cf-tool/config"
+	"github.com/therehello/cf-tool/client"
+	"github.com/therehello/cf-tool/config"
 )
 
 // Submit command

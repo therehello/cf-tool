@@ -34,8 +34,8 @@ github.com/tklauser/go-sysconf v0.3.11 h1:89WgdJhk5SNwJfu+GKyYveZ4IaJ7xAkecBo+Kd
 github.com/tklauser/go-sysconf v0.3.11/go.mod h1:GqXfhXY3kiPa0nAXPDIQIWzJbMCB7AmcWpGR8lSZfqI=
 github.com/tklauser/numcpus v0.6.0 h1:kebhY2Qt+3U6RNK7UqpYNA+tJ23IBEGKkB7JQBfDYms=
 github.com/tklauser/numcpus v0.6.0/go.mod h1:FEZLMke0lhOUG6w2JadTzp0a+Nl8PF/GFkQ5UVIcaL4=
-github.com/woshiluo/cf-tool v1.0.0 h1:VX5hj8Zl5Ysz3BFzEPYAhS66gKNENa7YLtjTMLxSjh4=
-github.com/woshiluo/cf-tool v1.0.0/go.mod h1:UFTBTaimg0IdoEgQw2low07izucdAIHJPMeXnD4DP0Q=
+github.com/therehello/cf-tool v1.0.0 h1:VX5hj8Zl5Ysz3BFzEPYAhS66gKNENa7YLtjTMLxSjh4=
+github.com/therehello/cf-tool v1.0.0/go.mod h1:UFTBTaimg0IdoEgQw2low07izucdAIHJPMeXnD4DP0Q=
 github.com/yusufpapurcu/wmi v1.2.3 h1:E1ctvB7uKFMOJw3fdOW32DwGE9I7t++CRUEMKvFoFiw=
 github.com/yusufpapurcu/wmi v1.2.3/go.mod h1:SBZ9tNy3G9/m5Oi98Zks0QjeHVDvuK0qfxQmPyzfmi0=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=

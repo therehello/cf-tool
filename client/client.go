@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 
 	"github.com/fatih/color"
-	"github.com/woshiluo/cf-tool/cookiejar"
+	"github.com/therehello/cf-tool/cookiejar"
 )
 
 // Client codeforces client

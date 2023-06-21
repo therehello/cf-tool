@@ -3,9 +3,9 @@ package cmd
 import (
 	"github.com/fatih/color"
 	ansi "github.com/k0kubun/go-ansi"
-	"github.com/woshiluo/cf-tool/client"
-	"github.com/woshiluo/cf-tool/config"
-	"github.com/woshiluo/cf-tool/util"
+	"github.com/therehello/cf-tool/client"
+	"github.com/therehello/cf-tool/config"
+	"github.com/therehello/cf-tool/util"
 )
 
 // Config command

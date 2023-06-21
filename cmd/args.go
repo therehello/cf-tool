@@ -7,8 +7,8 @@ import (
 	"regexp"
 
 	"github.com/docopt/docopt-go"
-	"github.com/woshiluo/cf-tool/client"
-	"github.com/woshiluo/cf-tool/config"
+	"github.com/therehello/cf-tool/client"
+	"github.com/therehello/cf-tool/config"
 )
 
 // ParsedArgs parsed arguments
